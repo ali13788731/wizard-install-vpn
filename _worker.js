@@ -1,4 +1,4 @@
-﻿const Version = '2026-08-11 14:45:22';
+const Version = '2026-08-11 14:45:22';
 let config_JSON, 缓存SOCKS5白名单 = null, 调试日志打印 = false;
 let SOCKS5白名单 = ['*tapecontent.net', '*cloudatacdn.com', '*loadshare.org', '*cdn-centaurus.com', 'scholar.google.com'];
 const Pages静态页面 = 'https://edt-pages.github.io';
@@ -92,7 +92,7 @@ export default {
                     
                     // 👈 کدهای جدید: تولید خودکار لینک سابسکریپشن هوشمند برای تحویل به ربات 👉
                     const 订阅TOKEN = await MD5MD5(host + userID);
-                    const generatedSubLink = `https://${host}/sub?target=mixed&token=${订阅TOKEN}`;
+                    const generatedSubLink = `https://${host}/sub?token=${订阅TOKEN}`;
 
                     return new Response(JSON.stringify({ 
                         success: true, 
